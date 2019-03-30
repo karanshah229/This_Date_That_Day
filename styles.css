@@ -1,0 +1,124 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #EAEAEA;
+}
+
+::-webkit-scrollbar-thumb:start {
+    background-color: transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #CCC;
+}
+
+a {
+    color: black;
+}
+
+@font-face { font-family: simplifica; src: url('/SIMPLIFICA.ttf'); } 
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: simplifica;
+    background-color: #2589BD;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    color: #F79256;
+}
+
+#error {
+    display: none;
+    margin-top: 10vh;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #82204A;
+}
+
+#day-select, #month-select, #year-select {
+    margin-right: 15px;
+}
+
+select {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    font-family: simplifica;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding: 0.5rem;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+option {
+    background-color: #CCCCCC55;
+}
+
+#result-container {
+    margin-top: 10vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+#result {
+    color: #F79256;
+}
+
+#prev-year, #next-year {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+#prev-year:hover, #next-year:hover {
+    transform: scale(1.1);
+    animation: transform 2s ease-in-out;
+}
+
+#footer {
+    position: absolute;
+    right: 20px;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 799px) {
+    body {
+        padding: 0 5vw 0 5vw;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    select {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    #when-will, #be {
+        font-size: 1rem;
+    }
+    #result-container {
+        margin-top: 5vh;
+    }
+    #footer { font-size: 0.8rem; }
+}
